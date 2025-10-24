@@ -97,7 +97,7 @@ O atributo "for" deve sempre ter o mesmo valor que o "id" do campo que ela descr
 o campo de digitação é selecionado                        
 -->                    
                     <label for="nome"> Nome: </label>
-                    <br/>
+                    
 <!--
 A tag <input> cria um campo de entrada, uma caixa para o usuário digitar algo.
 O type serve para indicar qual o tipo de valor que o campo vai receber.
@@ -105,17 +105,21 @@ O name é o nome da informação que vai ser enviada no formulário.
 O id é o identificador UNICO usado para vincular o campo com o <label>.                   
 -->                    
                     <input type="text" name="nome" id="nome">
-                    <br/><br/>
-
                     <label for="email">E-mail: </label>
-                    <br/>
                     <input type="email" name="email" id="email" required>
-                    <br/><br/>
-
                     <label for="mensagem">Mensagem:</label>
-                    <br/>
-                    <input type="text" name="mensagem" id="mensagem">
-                    <br/><br/>
+                    
+<!-- A tag <textarea> cria uma área de texto maior, permitindo que o usuário digit mensagens longas (como observações ou comentários).
+Diferente do <input type="tex">, que aceita apenas uma linha, o <textarea> aceita várias linhas de texto-->
+
+        <textarea
+            name="mensagem"
+            id="mensagem"
+            rows="4"
+            cols="30"
+            required
+            ></textarea>
+                    
 <!--
 A tag <button> cria um botão clicável. O atributo type indica o tipo do botão, nesse caso o submit indica que o botão vai enviar o formulário
 -->

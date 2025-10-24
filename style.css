@@ -106,4 +106,73 @@ nav{
     border-top: 1px solid #1e293b;
     /* borda inferior --> 1px (espessura),solid (o tipo de borda), cor */
     border-bottom: 1px solid #1e293b;
+    /* a position define a posição que o elemento vai ser exibido, nesse caso o sticky deixa o menu fixo no topo */
+    position: sticky;
+    top: 0;
+}
+/* alterando a lista que esta dentro da nav */
+nav ul {
+    /* vai deixar os links lado a lado */
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-around;
+    /* remove os pontinhos da lista */
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #e2e8f0;
+    padding: 6px 14px;
+    /* para deixar as bordas (os cantos) arrendodados, usamos border-radius */
+    border-radius: 50px;
+}
+
+nav a:hover{
+   background-color: #00e5ff;
+   color: #000;
+}
+
+/*
+======================================================================================================================================================================================
+ESTRUTURA PRINCIPAL E SEÇÕES
+======================================================================================================================================================================================
+*/
+main {
+    /* definindo a largura máxima do conteúdo */
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+/* Cada <section> funciona como um card visual */
+main > section{
+    background-color: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    box-shadow: 0 0 20px (rgba(0, 229, 255, 0.08));
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* =================================
+IMAGENS
+==================================== */
+
+img{
+max-width: 100%;
+height: auto;
+border-radius: 12px;
+border: 1px solid #1e293b;
+margin-bottom: 14px;
+}
+
+/*
+============================================
+FORMULÁRIO
+============================================
+*/
+form{
+    /* espaça todos os campos verticalmente */
+    display: grid;
+    gap: 12px;
 }

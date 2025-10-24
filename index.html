@@ -1,0 +1,207 @@
+<!DOCTYPE html> <!-- aqui definimos o tipo de documento-->
+<html lang="pt-BR">
+    <!--a tag head é utilizada para configurar a nossa pagina-->
+    <head>
+        <!-- esta tag serve para dizer quais tipo de caracteres vamos utilizar no site (utf-8)-->
+        <meta charset="utf-8"/>
+        <!-- aqui configuramos a escala (tipos de tela) em que o site vai ser exibido -->
+        <meta name="viewport" content="witdth=device-width,initial-scale=1"/>
+        <!-- Vicular/linkar o arquivo de css a nossa página -->
+        <link rel="stylesheet" href="style.css">
+        <!-- titulo da pagina, exibido na guia do site -->
+         <title> Quem sou eu</title>
+        </head>
+    <!-- a tag body é usada para trazer as informações que vão aparecer dentro do site -->
+     <body>
+        <!-- cabeçalho -->
+        <header>
+            <!-- as tags de h são para titulos e elas definem a importância, o peso, daquele titulo dentro da página, eles variam de h1 a h6, 
+             onde h1 é mais importante e o h6 é o menos importante -->
+            <h1>Quem sou eu</h1>
+            <!-- a tag <p></p> serva para criar um paragrafo dentro da pagina -->
+             <p> Uma pagina simples para me apresentar ao mundo!</p>
+        </header>
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#interesses">Interesses</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#redes">Redes Sociais</a></li>
+            </ul>
+        </nav>
+        <!-- corpo -->
+        <main>
+            <!-- as section's criam sessões, partição, dentro do site -->
+            <section id="sobre">
+                <h2> Sobre mim</h2>
+                <!-- a tag de img serve para adicionar imagens ao nosso site, ela vem com duas propriedades: 
+                 src ==> serve para mostrar o caminho da imagem 
+                 alt ==> é a descrição desta imagem  
+                 width ==> ajusta a largura da imagem 
+                 -->
+            
+                <img 
+                src="https://img.freepik.com/vetores-gratis/cute-girl-hacker-operando-laptop-cartoon-vector-icon-ilustracao-pessoas-tecnologia-isolada-plana_138676-9487.jpg" 
+                alt="Mulher sorrindo em ambiente corporativo"
+                width="250"
+                >
+               <p>
+                <!-- a tag strong serve para destacar uma palavra -->
+                 <!-- a tag br serve para quebrar linha -->
+                 Olá! Eu sou <strong>Juliana</strong> e adoro aprender Sobre tecnologia. <br/> Acredito que programa é uma forma de contar 
+                 histórias e resolver problemas no mundo real. <br/> Nesta página, você vai conhecer um pouco mais sobre mim.
+               </p>
+            </section>
+               
+            <section id="interesses">
+                <h2>Interesses</h2>
+                <p>Algumas coisas que me fazem brilhas os olhos:</p>
+                <!-- Para criar listas podemos usar as seguintes tags: 
+                 ul ==> listas sem ordem
+                 ol ==> listas ordenadas
+                 Cada item dentedo de uma lista precisa vir dentro de uma tag li -->
+                <ul>
+                    <li>Programação de JS</li>
+                    <li>Arduino</li>
+                    <li>Fluxograma</li>
+                    <li>Projetos reais</li>
+                    <li>Projetos de baixo custo usando automação</li>
+                </ul>
+            </section>
+            <section id="objetivos">
+                <h2>Objetivos</h2>
+                <p>Metas para os próximos meses: </p>
+                <ol>
+                    <li>Aprender a desenvolver sites usando HTML, CSS e JS</li>
+                    <li>Aprender automação usando ESP32</li>
+                    <li>Aprender redes com cabeamento estruturado</li>
+                </ol>
+            </section>
+
+            <section id="contatos">
+                <h2>Contatos</h2>
+                <p>Preencha o formulário para falar comigo:</p>
+<!--
+A tag <form> cria um formulário que pode ser usado para coletar informações do usuário.
+O atributo "action" define para onde os dados serão enviados, como ainda não temos isso definido deixamos como "#"
+O atributo "method" define como os dados serã enviados, o "post" é o mais comum e significa qu esses dados vão ser salvos em algum local
+-->                
+                <form action="#">
+
+<!--
+A tag <label> serve para descrever o campo, ou seja, criar uma legenda
+O atributo "for" deve sempre ter o mesmo valor que o "id" do campo que ela descreve. Isso faz com que a acessibilidade fique melhor, porque ao clicar no texto, 
+o campo de digitação é selecionado                        
+-->                    
+                    <label for="nome"> Nome: </label>
+                    <br/>
+<!--
+A tag <input> cria um campo de entrada, uma caixa para o usuário digitar algo.
+O type serve para indicar qual o tipo de valor que o campo vai receber.
+O name é o nome da informação que vai ser enviada no formulário.
+O id é o identificador UNICO usado para vincular o campo com o <label>.                   
+-->                    
+                    <input type="text" name="nome" id="nome">
+                    <br/><br/>
+
+                    <label for="email">E-mail: </label>
+                    <br/>
+                    <input type="email" name="email" id="email" required>
+                    <br/><br/>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br/>
+                    <input type="text" name="mensagem" id="mensagem">
+                    <br/><br/>
+<!--
+A tag <button> cria um botão clicável. O atributo type indica o tipo do botão, nesse caso o submit indica que o botão vai enviar o formulário
+-->
+
+                   <button type="submit">Enviar mensagem</button>          
+                </form>
+            </section>
+            <section id="habilidades">
+<!--
+A tag <table> cria uma tabela para organizar dados em linhas e colunas.
+O atributo border é usado apenas para mostrar as bordas de forma simples
+-->             
+                <table border="1">
+<!--
+A tag <caption> define o titulo ou legenda da tabela.
+Ela aparece logo acima e serve para descrever o conteúdo da tabela.
+-->
+
+                    <caption>Minhas Habilidades</caption>
+<!--
+A tag <thead> (table head) agrupa as linhas que formam o cabeçalho da tabela.
+Dentro dele, usamos <tr> (table row) para criar uma linha e <th> (table header) para definir as células do cabeçalho.
+-->
+                
+                    <thead>
+<!-- Cada <tr> cria uma linha na tabela -->           
+
+                        <tr>
+<!-- Cada <th> representa o título de uma coluna -->
+
+                        <th>Linguagem</th>
+                        <th>Principais conteúdos</th>
+                        <th>Nível de dificuldade</th>
+                     </tr>
+                    </thead>
+<!--
+                   
+-->
+
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>
+                            Estrutura de páginas, tags, links, listas, formulários e tabelas
+                            </td>
+                            <td>Fácil ⭐</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Cores, fontes, layouts, responsividade e animação simples </td>
+
+                            <td>Médio ⭐⭐ </td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>
+                                Variáveis, funções, eventos, condicionais e manipulação do DOM
+                             </td>
+                             <td>Dificil ⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Variaveis, estruturas de controle e funções</td>
+                            <td> Dificil ⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                 </table>
+            </section>
+
+            <section id="redes">
+                <h2>Redes Sociais</h2>
+                <p>
+                    Instagram: <a href="https://instagram.com">@juliana-corrêa-de-oliveira</a>
+                 </p>
+                 <p>
+                    Linkedin: <a href="https://www.linkedin.com/">@juliana-corrêa-de-oliveira</a>
+                 </p>
+                 <p>
+                    Github: <a href="https://github.com/">@JulianaCOl</a>
+                 </p>
+                
+            </section>
+        </main>
+        <!-- rodapé -->
+        <footer>
+            <p>Site desenvolvido pela turma de IoT01</p>
+        </footer>
+    </body>
+</html>

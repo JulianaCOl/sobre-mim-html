@@ -16,6 +16,7 @@ Aqui usamos para remover as margens. */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -175,4 +176,87 @@ form{
     /* espaça todos os campos verticalmente */
     display: grid;
     gap: 12px;
+}
+label {
+    /* deixar o label em negrito */
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+input, textarea{
+    width: 50%;
+    padding: 10px 12px;
+    background: #0f172a;
+    border: 1.5px solid #1e293b;
+    border-radius: 10px;
+    color: #e2e8f0;
+}
+
+input:focus, textarea:focus{
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    outline: none;
+}
+
+button{
+    background: linear-gradient(90deg, #8b5cf6, #00e5ff);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    /* cursor do mouse */
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+    width: 50%;
+}
+
+/*
+============================================
+TABELA
+============================================
+*/
+table{
+    width: 100%;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    background-color: #0f172a;
+    /* o border collapse une as bordas da tabela */
+    border-collapse: collapse;
+}
+
+caption{
+    color: #00e5ff;
+    text-shadow: 0 0 6px #00e5ff;
+    font-weight: bold;
+    padding: 14px;
+    font-size: 1.4rem;
+}
+
+thead th{
+    background-color: #1e1b4b;
+    color: #e2e8f0;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #1e293b;
+}
+
+tbody td{
+    padding: 10px 14px;
+    color: #94a3b8;
+    border-bottom: 1px solid #1e293b;
+}
+
+/*
+=================================================================================================================================
+RODAPÉ
+=================================================================================================================================
+*/
+footer{
+    text-align: center;
+    padding: 24px;
+    background: #0f172a;
+    color: #94a3b8;
+    border-top: 1px solid #1e293b;
+    font-size: 0.9rem;
 }

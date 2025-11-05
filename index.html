@@ -89,7 +89,7 @@ A tag <form> cria um formulário que pode ser usado para coletar informações d
 O atributo "action" define para onde os dados serão enviados, como ainda não temos isso definido deixamos como "#"
 O atributo "method" define como os dados serã enviados, o "post" é o mais comum e significa qu esses dados vão ser salvos em algum local
 -->                
-                <form action="#">
+                <form id ="form" onsubmit="enviarFormulario(event);">
 
 <!--
 A tag <label> serve para descrever o campo, ou seja, criar uma legenda
@@ -123,7 +123,7 @@ Diferente do <input type="tex">, que aceita apenas uma linha, o <textarea> aceit
 <!--
 A tag <button> cria um botão clicável. O atributo type indica o tipo do botão, nesse caso o submit indica que o botão vai enviar o formulário
 -->
-
+                    <p id="resposta"></p>
                    <button type="submit">Enviar mensagem</button>          
                 </form>
             </section>
@@ -208,4 +208,9 @@ Dentro dele, usamos <tr> (table row) para criar uma linha e <th> (table header) 
             <p>Site desenvolvido pela turma de IoT01</p>
         </footer>
     </body>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="env.js"></script>
+    <script src="script.js"></script>
 </html>

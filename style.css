@@ -260,3 +260,8 @@ footer{
     border-top: 1px solid #1e293b;
     font-size: 0.9rem;
 }
+
+#resposta{
+    color:#8761f7;
+    text-shadow: 0 0 10px #8761f7;
+}
